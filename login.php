@@ -2,17 +2,12 @@
 require_once 'res/db.php';
 require_once 'res/query.php';
 session_start();
+require_once 'html/header.php';
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
 ?>
-<html>
-    <head>
-        <link rel="stylesheet" href="css/style.css" type="text/css" />
-    </head>
-    <body>
-        <div id="main">
 <?php
 $index_location = "index.php";
 if (!empty($_SESSION['LoggedIn']) && !empty($_SESSION['username'])) {
@@ -55,9 +50,8 @@ if (!empty($_SESSION['LoggedIn']) && !empty($_SESSION['username'])) {
                     <input type="submit" name="login" id="login" value="Login" />
                 </fieldset>
             </form>
-        </div>
-    </body>
-</html>
+
 <?php
+require_once 'html/footer.php';
 }
 ?>

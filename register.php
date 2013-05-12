@@ -2,17 +2,9 @@
 session_start();
 require_once 'res/db.php';
 require_once 'res/query.php';
+
+require_once 'html/header.php';
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <script type="text/javascript" src="js/limitInput.js"></script>
-        <title>PHP Document Management System</title>
-        <link rel="stylesheet" href="css/style.css" type="text/css" />
-    </head>
-    <body>
-        <div id="main">
             <?php
             if (!empty($_POST['username']) && !empty($_POST['password'])) {
                 $username = mysql_real_escape_string($_POST['username']);
@@ -82,9 +74,5 @@ require_once 'res/query.php';
                 <p><a href="index.php">Return to main page.</a></p>
 
             <?php
-            }
+            }require_once 'footer.php';
             ?>
-
-        </div>
-    </body>
-</html>
