@@ -6,7 +6,6 @@
 session_start();
 require_once 'authentication.php';
 require_once 'html/header.php';
-require_once 'html/loginbar.php';
 ?>
 <h1>test</h1>
 <?php
