@@ -1,0 +1,117 @@
+/* 
+    Document   : styles
+    Created on : 18/11/2011, 2:31:04 PM
+    Author     : Laureus
+    Description:
+        PHP evaluation task
+*/
+
+/*  * {
+    margin: 0;
+    padding: 0;
+}*/
+body {
+    font-family: Trebuchet MS;
+}
+a {
+    color: #000;
+}
+a:hover, a:active, a:visited {
+    text-decoration: none;
+}
+#main {
+    width: 1000px;
+    /*    880px*/
+    margin: 0 auto;
+    /*    margin-top: 50px;*/
+    margin-top: 0px;
+    padding: 10px;
+    border: 1px solid #CCC;
+    background-color: #EEE;
+}
+form fieldset { border: 0; }
+form fieldset p br { clear: left; }
+label {
+    margin-top: 5px;
+    display: block;
+    width: 100px;
+    padding: 0;
+    float: left;
+}
+input {
+    font-family: Trebuchet MS;
+    border: 1px solid #CCC;
+    margin-bottom: 5px;
+    background-color: #FFF;
+    padding: 2px;
+}
+input:hover {
+    border: 1px solid #222;
+    background-color: #EEE;
+}
+ul{
+    list-style: none;
+}
+.login_bar {
+    text-align: right;
+}
+
+.folder {
+    list-style-image: url(../img/folder16.png);
+}
+.file {
+    list-style-image: url(../img/file_icon16.png);
+}
+.user_file_structure{
+    background-color: #FFF;
+    float: left;
+    width: 45%;
+    height: 300px;
+    overflow: auto;
+
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.user_files_label{
+    float: right;
+}
+
+.user_file_structure_label{
+    float: left;
+}
+
+.user_files{
+    background-color: #FFF;
+    float: right;
+    width: 45%;
+    height: 300px;
+    overflow: auto;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.content_divider{
+    clear: both;
+}
+/*.public_files_for_view{
+        clear: both;
+    background-color: #FFF;
+    margin-top: 20px;
+
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}*/
+
+.shared{
+    color: blue;
+}
+
+.notShared{
+    color: green;
+}
